@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #eef2f6;
+}
+
+.app-shell {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 230px;
+  background: #0f7081;
+  color: white;
+  padding: 20px;
+}
+
+.subtitle {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.profile {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.nav {
+  padding: 10px;
+  opacity: 0.7;
+}
+.nav.active {
+  background: rgba(255,255,255,0.2);
+  opacity: 1;
+}
+
+/* MAIN */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.topbar input {
+  padding: 8px;
+  width: 250px;
+}
+
+.top-icons span {
+  margin-left: 10px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-btn {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand {
+  display: flex;
+  gap: 10px;
+}
+
+.logo {
+  background: blue;
+  color: white;
+  padding: 10px;
+}
+
+.desc {
+  font-size: 12px;
+  color: gray;
+}
+
+.slug {
+  color: purple;
+}
+
+.status {
+  background: green;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+/* PAGINATION */
+.pagination {
+  margin-top: 10px;
+}
+
+.pagination button {
+  margin: 2px;
+}
+
+/* DRAWER */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.drawer {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background: white;
+  padding: 20px;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.drawer-body input,
+.drawer-body textarea {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.drawer-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.save {
+  background: blue;
+  color: white;
+}
